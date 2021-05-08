@@ -1,0 +1,25 @@
+{
+  "name": "nodefolie",
+  "version": "0.0.1",
+  "description": "A personel portfolie porject using Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon app.js"
+  },
+  "keywords": [
+    "portfolie",
+    "Node",
+    "personal"
+  ],
+  "author": "Nicklas Bøgeskov",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.6.0",
+    "packagea": "^2.0.0",
+    "packageb": "^1.0.0"
+  }
+}

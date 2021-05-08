@@ -1,0 +1,12 @@
+#image {
+    width: 650px;
+}
+
+#grid-project {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#button-pro {
+    background-color: lightblue;
+}

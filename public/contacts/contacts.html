@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="./contacts.css" />
+
+<div id="contact-info">
+        <h1 style = "background: black; color: white">Welcome. This is my Contact information</h1>
+
+<div id="row">
+     <div id="column">
+        <p>This is my informaiton. <br>
+        Nicklas Bøgeskov-Jensen<br>
+        40 76 36 78<br>
+        ncnjensen@gmail.com<br>
+        Fill out the form and i will get back you you soon</p></div>
+
+        <div id="column">
+        <img id="cont-image" src="/images/HeadE.PNG"> <br>
+     </div>
+</div>
+
+
+</div>
+
+<form method="POST" action="/contacts/sendMail">
+    <div align="center">
+    <div id="box">
+        <h2>Do you need to get in touch with me?</h2>
+        
+        <label for="">Name</label><br>
+        <input type="text" name="name" placeholder="Name"><br>
+
+        <label for="">Telephone</label><br>
+        <input type="text" placeholder="Telephone"><br>
+
+        <label for="">Email</label><br>
+        <input type="email" name="email" placeholder="Email"><br>
+
+        <label for="">Subject</label><br>
+        <input type="text" name="subject" placeholder="subject"><br>
+
+        <label for="" >Message</label><br>
+        <textarea type="text" name="message" placeholder="Message"></textarea><br>
+
+        <button type="submit">Contact me</button>
+        </div>
+    </div>
+</form>
+
+
+<script>
+        fetch("/contacts", {
+                "body": JSON.stringify({})
+        })
+</script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
